@@ -13,7 +13,11 @@ body {
   background-image: url(https://images.pexels.com/photos/220182/pexels-photo-220182.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-attachment: fixed;
 }
-
+#wow{
+  z-index: 2;
+  position: fixed;
+  width: 100vw;
+}
 .headerbg {
   position: relative;
   width: 100%;
@@ -192,6 +196,7 @@ header {
 }
 
 .content {
+  z-index: 2;
   width: auto;
   padding: 50px;
   margin: 0 100px 0px 100px;
@@ -205,15 +210,76 @@ header {
 .element {
   border-radius: 5px;
   margin: 0 100px 50px 100px;
-  width: 75vw;
+  width: 80vw;
   height: 600px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background-color: white;
 }
 
 .element:last-child {
+  margin-bottom: 0;
+}
+
+#bg {
+  width: 80vw;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  align-items: baseline;
+  height: auto;
+  justify-content: center;
+}
+
+#item {
+  flex-direction: column;
+  width: 500px;
+  height: 200px;
+  transition-delay: 0.5s;
+  transition: 0.5s ease-out;
+}
+
+#item:hover {
+  width: 30vw;
+  height: 500px;
+  transition-delay: 0.5s;
+  transition: 0.5s ease-out;
+  box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(255, 255, 255, 0.22);
+}
+
+.profile-img {
+  margin-bottom: 100px;
+  border-radius: 200px;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5)
+}
+
+.profile-img img {
+  max-width: 100%;
+  border-radius: 200px;
+}
+
+.profile-text {
+  position: relative;
+  margin-top: -150px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition-delay: 0.5s;
+  transition: 0.5s ease-out;
+}
+
+#item:hover .profile-text {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+#item:hover .profile-img {
+  transition-delay: 0.5s;
+  transition: 0.5s ease-out;
   margin-bottom: 0;
 }
 
@@ -223,7 +289,6 @@ header {
 
 .element-desc-left {
   margin-left: 50px;
-  margin-right: 50px;
 }
 
 .element-desc-right {
@@ -241,14 +306,58 @@ header {
   font-weight: 400;
   font-size: 18px;
 }
-.line{
+
+.line {
   margin-bottom: 50px;
-  width:auto;
-  height:auto;
+  width: auto;
+  height: auto;
 }
-.add{
+
+.add {
   margin-bottom: 50px;
 }
+
+.map {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.9)
+}
+
+#map {
+  height: 550px;
+}
+
+#contacts {
+  height: 76vh;
+}
+.info-block {
+  font-size: 18px;
+  display: inline-block;
+  height: auto;
+  width: auto;
+  margin-top: 10px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  border: 2px solid;
+  border-color: black;
+}
+#telephone{
+  border-color: #1FC614;
+}
+#mail{
+  border-color: #DAB420;
+}
+#telephone:hover {
+  color: white;
+  background-color: #1FC614;
+  transition: all 0.3s ease;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5);
+}
+#mail:hover {
+  color: white;
+  background-color: #DAB420;
+  transition: all 0.3s ease;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5);
+}
+
 .footer-text {
   margin-left: 10px;
   color: rgba(255, 255, 255, 0.7);
