@@ -13,47 +13,12 @@ body {
   background-image: url(https://images.pexels.com/photos/220182/pexels-photo-220182.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-attachment: fixed;
 }
-#wow{
+
+/* Header section */
+#wow {
   z-index: 2;
   position: fixed;
   width: 100vw;
-}
-.headerbg {
-  position: relative;
-  width: 100%;
-}
-
-.diviz {
-  font-size: 24px;
-}
-
-.img_text {
-  font-size: 80px;
-  color: white;
-  position: absolute;
-  top: 180px;
-  left: 150px;
-  width: 700px;
-}
-
-.gradient {
-  cursor: default;
-  display: inline-block;
-  position: relative;
-  line-height: 0;
-}
-
-.gradient:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: transparent;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  opacity: 0.8;
 }
 
 header {
@@ -190,9 +155,51 @@ header {
   }
 }
 
+/* Header section */
 .element-image {
   margin: 50px;
   height: 400px;
+}
+
+.headerbg {
+  position: relative;
+  width: 100%;
+}
+
+.img_text {
+  font-size: 92px;
+  color: white;
+  position: absolute;
+  top: 200px;
+  left: 150px;
+  width: 1000px;
+  height: auto;
+}
+
+.gradient {
+  cursor: default;
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+}
+
+.gradient:after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8));
+  opacity: 0.8;
+}
+
+#contactus {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 30px;
 }
 
 .content {
@@ -302,7 +309,7 @@ header {
 }
 
 .desch2 {
-  line-height: 1, 5;
+  line-height: 1.5;
   font-weight: 400;
   font-size: 18px;
 }
@@ -321,13 +328,10 @@ header {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.9)
 }
 
-#map {
-  height: 550px;
-}
-
 #contacts {
   height: 76vh;
 }
+
 .info-block {
   font-size: 18px;
   display: inline-block;
@@ -339,25 +343,47 @@ header {
   border: 2px solid;
   border-color: black;
 }
-#telephone{
+
+#telephone {
   border-color: #1FC614;
 }
-#mail{
-  border-color: #DAB420;
+
+#mail {
+  border-color: #FFCC00;
 }
+
 #telephone:hover {
   color: white;
   background-color: #1FC614;
   transition: all 0.3s ease;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5);
-}
-#mail:hover {
-  color: white;
-  background-color: #DAB420;
-  transition: all 0.3s ease;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
+#mail:hover {
+  color: white;
+  background-color: #FFCC00;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Services Section */
+#element-service {
+  width: 80vw;
+  height: 76vh;
+  align-items: center;
+  justify-content: space-around;
+}
+.element-item {
+  text-align: center;
+  display: inline-block;
+}
+
+#service-img {
+  color: black;
+  font-size: 80px;
+}
+/* Services Section */
+/* Footer */
 .footer-text {
   margin-left: 10px;
   color: rgba(255, 255, 255, 0.7);
